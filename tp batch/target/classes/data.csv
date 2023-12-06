@@ -1,0 +1,5 @@
+idTransaction,idCompte,montant,dateTransaction
+1,1,2000,02/01/2015
+2,2,1800,02/01/2015
+3,3,1000,05/01/2015
+4,4,3100,02/10/2015

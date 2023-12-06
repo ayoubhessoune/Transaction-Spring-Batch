@@ -1,0 +1,25 @@
+server:
+  port: ${SERVER_PORT}
+
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+  main:
+    allow-circular-references: true
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    driverClassName: ${MYSQL_DRIVER}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
